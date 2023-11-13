@@ -36,7 +36,7 @@
 
 # server code
 
-    
+    ```
     package Calculator;
     
     import java.io.*;
@@ -159,10 +159,10 @@
             return result;
         }
     }
-
+```
 
 # client code
-
+```
     package Calculator;
     import java.io.*;
     import java.net.*;
@@ -238,4 +238,4 @@
             }
         }
     }
-
+```
