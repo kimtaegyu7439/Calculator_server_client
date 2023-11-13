@@ -1,12 +1,16 @@
 # Calculator_server_client
-#개요
+# 개요
 과제의 목표는 여러 명이 동시접속 가능한 계산기 서버 프로그램을 만드는 것 입니다..
 
 Requirements 
-•	< 요구조건 #1: 계산이 여러 번 가능해야 한다.>
+•	< 요구조건 #1: 계산이 여러 번 가능해야 한다.> 
+
 •	< 요구조건 #2: 여러 명이 동시 접속 가능해야 한다..>
+
 •	< 요구조건 #3: 예외처리가 가능해야 한다.>
+
 •	< 요구조건 #4: 파일을 통해 서버의 종류를 알아내야 한다.>
+
 
 
 REPORT
@@ -22,7 +26,7 @@ REPORT
 ![image](https://github.com/kimtaegyu7439/Calculator_server_client/assets/84448791/19f86bd8-3236-4ec1-90bb-44a8941206f4)
 
 
-#server code
+# server code
 
 package Calculator;
 import java.io.*;
@@ -143,7 +147,7 @@ public class Server {
 }
 
 
-#client code
+# client code
 
 package Calculator;
 import java.io.*;
