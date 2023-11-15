@@ -28,6 +28,50 @@
 
 3.	서버 정보 파일 활용: 서버 정보 파일(serverinfo.txt)을 사용하여 서버의 IP 주소와 포트를 설정하고 있습니다.
 
+# HTTP 프로토콜 정의 문서
+## 1. 개요
+이 문서는 간단한 계산기 서버를 위한 HTTP 프로토콜 정의를 제공합니다. 서버는 클라이언트로부터 수신된 HTTP POST 요청을 처리하고, 계산 결과를 HTTP 응답으로 반환합니다.
+
+## 2. 요청 형식
+### 2.1 POST 요청
+서버는 클라이언트로부터의 POST 요청을 다음과 같이 처리합니다.
+
+URL: /calculate
+헤더:
+Content-Type: text/plain
+바디: 계산식을 나타내는 문자열. 예: ADD 5 3
+## 3. 응답 형식
+서버는 클라이언트에 대한 응답으로 다음 형식을 사용합니다.
+
+헤더:
+    Content-Type: text/plain
+바디: 계산 결과를 나타내는 문자열. 예: 8
+## 4. 예제
+### 4.1 요청 예제
+    plaintext
+    Copy code
+    POST /calculate HTTP/1.1
+    Host: localhost:6780
+    Content-Type: text/plain
+
+ADD 5 3
+### 4.2 응답 예제
+    plaintext
+    Copy code
+    HTTP/1.1 200 OK
+    Content-Type: text/plain
+
+8
+## 5. 오류 처리
+서버는 잘못된 요청 또는 계산 오류에 대한 응답으로 다음과 같은 형식을 사용합니다.
+
+헤더:
+    Content-Type: text/plain
+바디: 오류 메시지를 나타내는 문자열. 예: Error message: Incorrect number of arguments
+## 6. 종료
+클라이언트가 더 이상 계산을 원하지 않을 때는 exit 명령어를 사용하여 연결을 종료합니다.
+
+
 
 # 구조도
 
