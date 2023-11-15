@@ -67,7 +67,11 @@ ADD 5 3
 
 헤더:
     Content-Type: text/plain
-바디: 오류 메시지를 나타내는 문자열. 예: Error message: Incorrect number of arguments
+
+    
+바디: 오류 메시지를 나타내는 문자열. 
+
+예: Error message: Incorrect number of arguments
 ## 6. 종료
 클라이언트가 더 이상 계산을 원하지 않을 때는 exit 명령어를 사용하여 연결을 종료합니다.
 
